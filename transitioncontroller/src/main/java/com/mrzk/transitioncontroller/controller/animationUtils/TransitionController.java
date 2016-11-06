@@ -29,7 +29,7 @@ public class TransitionController {
     private static final String TRANSITION_X = "TRANSITION_X";
     private static final String TRANSITION_Y = "TRANSITION_Y";
     /**
-     * 存储图片缩放比例和位移距离
+     * 存储元素缩放比例和位移距离
      */
     private Bundle mScaleBundle = new Bundle();
     private Bundle mTransitionBundle = new Bundle();
@@ -109,7 +109,7 @@ public class TransitionController {
                 Bitmap cacheBitmap = BitmapUtil.getCacheBitmapFromView(next_view);
 
 
-                // 获取上一个界面中，图片的宽度和高度
+                // 获取上一个界面中，元素的宽度和高度
                 final int mOriginWidth = mRect.right - mRect.left;
                 final int mOriginHeight = mRect.bottom - mRect.top;
 
@@ -225,12 +225,12 @@ public class TransitionController {
 
     }
     /**
-     * 计算图片缩放比例，以及位移距离
+     * 计算元素缩放比例，以及位移距离
      *
      * @param
      */
     private void getBundleInfo(View mView,int mOriginWidth,int mOriginHeight,Rect mRect) {
-        // 计算图片缩放比例
+        // 计算元素缩放比例
         mScaleBundle.putFloat(SCALE_WIDTH, (float) mView.getWidth() / mOriginWidth);
         mScaleBundle.putFloat(SCALE_HEIGHT, (float) mView.getHeight() / mOriginHeight);
 
