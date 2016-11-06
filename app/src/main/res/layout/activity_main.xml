@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="MaterialLoginCompat"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        />
+
+    <Button
+        android:id="@+id/btn_list1"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="List_One"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        />
+    <Button
+        android:id="@+id/btn_list2"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="List_Two"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        />
+    <Button
+        android:id="@+id/btn_list3"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="List_Three"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        />
+</LinearLayout>
