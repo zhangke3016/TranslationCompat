@@ -42,6 +42,9 @@ TransitionController.getInstance().show(this,getIntent());
             }
         });
 
+//界面退出的时候调用
+TransitionController.getInstance().exitActivity(PageDetailActivity.this);
+
 //增加界面圆形转换动画 
 // 用法及参数和ViewAnimationUtils一致
 ViewAnimationCompatUtils.createCircularReveal(cvAdd, cvAdd.getWidth()/2,0, fab.getWidth() / 2, cvAdd.getHeight());
