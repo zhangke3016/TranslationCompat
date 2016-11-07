@@ -20,12 +20,12 @@ public class PageDetail3Activity extends AppCompatActivity {
 
     private NestedScrollView nsv;
     private FloatingActionButton mFloatingActionButton;
-
+    private CardView cardview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagedetail);
-
+        cardview = (CardView) findViewById(R.id.cardview);
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
 
         getSupportActionBar().hide();
@@ -47,7 +47,7 @@ public class PageDetail3Activity extends AppCompatActivity {
                 getSupportActionBar().show();
                 mFloatingActionButton.animate().setDuration(300).scaleX(1).scaleY(1);
 
-                Animator mAnimator = ViewAnimationCompatUtils.createRectReveal( nsv, 0, nsv.getHeight(),ViewAnimationCompatUtils.RECT_TOP);
+                Animator mAnimator = ViewAnimationCompatUtils.createRectReveal( cardview, 0, cardview.getHeight(),ViewAnimationCompatUtils.RECT_TOP);
                 mAnimator.setDuration(500);
                 mAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
                 mAnimator.addListener(new AnimatorListenerAdapter() {
