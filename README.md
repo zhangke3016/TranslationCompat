@@ -1,12 +1,12 @@
-#页面过渡动画兼容库
+# 页面过渡动画兼容库
 >A transition animation compatible Library.
 
 >兼容Android5.0之后转场动画至Android4.0。
 
 
 
-#Preview
----
+# Preview
+
 
 ![MaterialLogin](gif/screen1.gif)
 
@@ -17,8 +17,7 @@
 ![Translation](gif/screen3.gif)
 ![Translation](gif/screen2.gif)
 ---
-#Usage 
-#java
+# java
 
 ```
 //参数一：当前Activity
@@ -53,17 +52,17 @@ ViewAnimationCompatUtils.createCircularReveal(cvAdd, cvAdd.getWidth()/2,0, fab.g
 Animator mAnimator = ViewAnimationCompatUtils.createRectReveal( nsv, 0, nsv.getHeight(),ViewAnimationCompatUtils.RECT_TOP);
 
 ```
-###About me
----
+### About me
+
 An Android Developer in ZhengZhou.
 
 【[**我的简书地址**](http://www.jianshu.com/users/3c751e06dc32/latest_articles)】
 
 【[**我的CSDN地址**](http://blog.csdn.net/zhangke3016)】
 
-=======
-###Thanks
-=======
+
+### Thanks
+
 
 [MaterialLogin](https://github.com/fanrunqi/MaterialLogin)
 
@@ -71,7 +70,7 @@ An Android Developer in ZhengZhou.
 
 [CanEffect](https://github.com/canyinghao/CanEffect)
 
-###License
+### License
 =======
 Copyright  2016  zhangke
 
